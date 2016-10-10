@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		457DCC921D8801510032C38C /* FLTickerSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 457DCC911D8801510032C38C /* FLTickerSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		457DCC991D8801510032C38C /* FLTickerSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457DCC8E1D8801510032C38C /* FLTickerSlider.framework */; };
-		457DCC9E1D8801510032C38C /* FLTickerSliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457DCC9D1D8801510032C38C /* FLTickerSliderTests.swift */; };
 		457DCCAB1D8801C20032C38C /* FLSliderTick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457DCCA91D8801C20032C38C /* FLSliderTick.swift */; };
 		457DCCAC1D8801C20032C38C /* FLTickerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457DCCAA1D8801C20032C38C /* FLTickerSlider.swift */; };
 		457DCCB41D8801FC0032C38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457DCCB31D8801FC0032C38C /* AppDelegate.swift */; };
@@ -22,13 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		457DCC9A1D8801510032C38C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 457DCC851D8801510032C38C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 457DCC8D1D8801510032C38C;
-			remoteInfo = FLTickerSlider;
-		};
 		457DCCC51D88021C0032C38C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 457DCC851D8801510032C38C /* Project object */;
@@ -56,8 +47,6 @@
 		457DCC8E1D8801510032C38C /* FLTickerSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLTickerSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		457DCC911D8801510032C38C /* FLTickerSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTickerSlider.h; sourceTree = "<group>"; };
 		457DCC931D8801510032C38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		457DCC981D8801510032C38C /* FLTickerSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLTickerSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		457DCC9D1D8801510032C38C /* FLTickerSliderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTickerSliderTests.swift; sourceTree = "<group>"; };
 		457DCC9F1D8801510032C38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		457DCCA91D8801C20032C38C /* FLSliderTick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FLSliderTick.swift; path = src/FLSliderTick.swift; sourceTree = "<group>"; };
 		457DCCAA1D8801C20032C38C /* FLTickerSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FLTickerSlider.swift; path = src/FLTickerSlider.swift; sourceTree = "<group>"; };
@@ -75,14 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		457DCC951D8801510032C38C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				457DCC991D8801510032C38C /* FLTickerSlider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				457DCC8E1D8801510032C38C /* FLTickerSlider.framework */,
-				457DCC981D8801510032C38C /* FLTickerSliderTests.xctest */,
 				457DCCB11D8801FC0032C38C /* FLTickerSliderDemo.app */,
 			);
 			name = Products;
@@ -130,7 +110,6 @@
 		457DCC9C1D8801510032C38C /* FLTickerSliderTests */ = {
 			isa = PBXGroup;
 			children = (
-				457DCC9D1D8801510032C38C /* FLTickerSliderTests.swift */,
 				457DCC9F1D8801510032C38C /* Info.plist */,
 			);
 			path = FLTickerSliderTests;
@@ -190,24 +169,6 @@
 			productReference = 457DCC8E1D8801510032C38C /* FLTickerSlider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		457DCC971D8801510032C38C /* FLTickerSliderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 457DCCA51D8801510032C38C /* Build configuration list for PBXNativeTarget "FLTickerSliderTests" */;
-			buildPhases = (
-				457DCC941D8801510032C38C /* Sources */,
-				457DCC951D8801510032C38C /* Frameworks */,
-				457DCC961D8801510032C38C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				457DCC9B1D8801510032C38C /* PBXTargetDependency */,
-			);
-			name = FLTickerSliderTests;
-			productName = FLTickerSliderTests;
-			productReference = 457DCC981D8801510032C38C /* FLTickerSliderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		457DCCB01D8801FC0032C38C /* FLTickerSliderDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 457DCCC01D8801FC0032C38C /* Build configuration list for PBXNativeTarget "FLTickerSliderDemo" */;
@@ -241,9 +202,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
 					};
-					457DCC971D8801510032C38C = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
 					457DCCB01D8801FC0032C38C = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
@@ -264,7 +222,6 @@
 			projectRoot = "";
 			targets = (
 				457DCC8D1D8801510032C38C /* FLTickerSlider */,
-				457DCC971D8801510032C38C /* FLTickerSliderTests */,
 				457DCCB01D8801FC0032C38C /* FLTickerSliderDemo */,
 			);
 		};
@@ -272,13 +229,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		457DCC8C1D8801510032C38C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		457DCC961D8801510032C38C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -307,14 +257,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		457DCC941D8801510032C38C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				457DCC9E1D8801510032C38C /* FLTickerSliderTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		457DCCAD1D8801FC0032C38C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,11 +269,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		457DCC9B1D8801510032C38C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 457DCC8D1D8801510032C38C /* FLTickerSlider */;
-			targetProxy = 457DCC9A1D8801510032C38C /* PBXContainerItemProxy */;
-		};
 		457DCCC61D88021C0032C38C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 457DCC8D1D8801510032C38C /* FLTickerSlider */;
@@ -496,28 +433,6 @@
 			};
 			name = Release;
 		};
-		457DCCA61D8801510032C38C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FLTickerSliderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fileio.FLTickerSliderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		457DCCA71D8801510032C38C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FLTickerSliderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fileio.FLTickerSliderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		457DCCC11D8801FC0032C38C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -563,15 +478,6 @@
 			buildConfigurations = (
 				457DCCA31D8801510032C38C /* Debug */,
 				457DCCA41D8801510032C38C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		457DCCA51D8801510032C38C /* Build configuration list for PBXNativeTarget "FLTickerSliderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				457DCCA61D8801510032C38C /* Debug */,
-				457DCCA71D8801510032C38C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
